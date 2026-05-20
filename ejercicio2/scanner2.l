@@ -36,7 +36,7 @@ identificador {letra}({letra}|{digito})*
 
 [ \t\n]     { }
 .           { printf("caracter no reconocido: %s\n", yytext); }
-
+ 
 %%
 
 int main(void) {
