@@ -21,6 +21,7 @@
  /* TODO 2 — Constante hexadecimal (ej: 0x1A, 0xFF, 0xDEAD)
    Pista: empieza con 0x o 0X, seguido de uno o más dígitos hexadecimales
    Acción esperada: printf("constante hexadecimal: %s\n", yytext);       */
+0[xX][0-9a-fA-F]+[0-9a-fA-F]* {printf("constante hexadecimal: %s\n", yytext);}
 
  /* TODO 3 — Identificador (ej: miVariable, _count, hola_mundo)
    Pista: empieza con letra o _, seguido de letras, dígitos o _
