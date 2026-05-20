@@ -16,6 +16,7 @@
  /* TODO 1 — Constante decimal (ej: 123, 456, 9)
    Pista: empieza con un dígito del 1-9, seguido de cero o más dígitos [0-9]
    Acción esperada: printf("constante decimal: %s\n", yytext);           */
+[1-9][0-9]*     { printf("constante decimal: %s\n", yytext); }
 
  /* TODO 2 — Constante hexadecimal (ej: 0x1A, 0xFF, 0xDEAD)
    Pista: empieza con 0x o 0X, seguido de uno o más dígitos hexadecimales
