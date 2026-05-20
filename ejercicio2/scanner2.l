@@ -16,7 +16,7 @@ digito [0-9]
 letra [a-zA-Z_]
  /* TODO 3 — Definir 'identificador' usando {letra} y {digito}
    Pista: empieza con {letra}, seguido de cero o más ({letra}|{digito}) */
-
+identificador {letra}({letra}|{digito})*
 %%
 
  /* ── Reglas usando las definiciones ─────────────────────────────────── */
