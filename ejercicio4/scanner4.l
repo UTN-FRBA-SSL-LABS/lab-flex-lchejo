@@ -9,6 +9,7 @@
 enum yytokentype {
     NUMBER = 258,
     /* TODO 1 — Agregar IDENT = 259 en el enum */
+    IDENT = 259,
 };
 
 int yylval;
