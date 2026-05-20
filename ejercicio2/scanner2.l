@@ -27,7 +27,7 @@ identificador {letra}({letra}|{digito})*
  /* TODO 4 — Regla para constante decimal usando {digito}
    Pista: empieza con dígito 1-9 (no cero), seguido de cero o más {digito}
    Acción esperada: printf("constante decimal de longitud %d: %s\n", yyleng, yytext);    */
-
+[1-9][digito]*  {printf("constante decimal de longitud %d: %s\n", yyleng, yytext);}
  /* TODO 5 — Regla para identificador usando {identificador}
    Acción esperada: printf("identificador de longitud %d: %s\n", yyleng, yytext);        */
 
