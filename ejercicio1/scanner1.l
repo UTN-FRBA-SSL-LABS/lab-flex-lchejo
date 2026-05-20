@@ -3,7 +3,7 @@
 
 %%
 
- /* ── Reglas ya implementadas ────────────────────────── */
+ /* ── Reglas ya implementadas ────────────────────────── */ 
 
  /* Constante octal: 0 seguido de dígitos octales (o solo 0) */
 0[0-7]*         { printf("constante octal: %s\n", yytext); }
